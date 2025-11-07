@@ -1,0 +1,205 @@
+.service-container {
+  width: 100%;
+  padding: 60px 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+/* Each section layout */
+.service-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* Reverse layout for alternating design */
+.service-section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Image styling */
+
+.service-image1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.6s ease;
+  margin-top: 2rem;
+}
+.service-image img{
+  width: 300px;
+  height: 25rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.6s ease;
+}
+
+.service-image img:hover,
+.service-image1 img:hover {
+  transform: scale(1.05);
+}
+
+/* Text section */
+.service-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.service-text h2 {
+  font-size: 28px;
+  color: #ba0d89;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+}
+.service-text1 h2 {
+  font-size: 28px;
+  color: #ba0d89;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+ margin-left: 10rem;
+  white-space: nowrap;
+}
+/* Text details */
+.service-text p {
+  color: #555;
+  font-size: 17px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.service-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-text ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #292828;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.highlight {
+  color: #d1169c;
+  font-weight: 600;
+  text-decoration: none;
+}
+.highlight:hover {
+  text-decoration: underline;
+}
+
+.service-text h3 {
+  color: #e346b6;
+  margin-top: 1rem;
+}
+
+/* Right side stacked layout (if needed later) */
+.service-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  flex: 1;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-80px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  0% { opacity: 0; transform: translateX(80px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.animate-left { animation: slideInLeft 1s ease forwards; }
+.animate-right { animation: slideInRight 1s ease forwards; }
+
+/* ------------------------------- */
+/* ✅ MOBILE RESPONSIVE SECTION */
+/* ------------------------------- */
+@media (max-width: 900px) {
+  .service-section,
+  .service-section.reverse {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .service-text h2 {
+    font-size: 22px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .service-image img,
+  .service-image1 img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .service-text ul li {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .service-text h3 {
+    text-align: center;
+  }
+}
+/* Box Grid - 2 Cards Per Row */
+.frp-service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+  width: 100%;
+}
+
+/* Individual Card Box */
+.frp-service-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f2f2f2;
+  transition: all 0.3s ease;
+}
+
+.frp-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Text */
+.frp-service-card h3 {
+  font-size: 1.2rem;
+  color: #e91e63;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.frp-service-card ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ✅ Responsive (1 card per row on small screens) */
+@media (max-width: 900px) {
+  .frp-service-grid {
+    grid-template-columns: 1fr;
+  }
+}
