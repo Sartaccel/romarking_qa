@@ -100,9 +100,9 @@ const Footer = () => {
   <p>
     © 2025 <a href="https://enterkeysolutions.com/" target="_blank" rel="noopener noreferrer">Enterkey Solutions</a>. 
     All rights reserved. &nbsp;|&nbsp; 
-    Romarking is one of the<a href="https://sartaccel.com/" target="_blank">SART Accelerator </a> portfolio companies.
+    Romarking is one of the <a href="https://sartaccel.com/" target="_blank" rel="noreferrer">SART Accelerator</a> portfolio companies.
+
   </p>
-  
   <div className="footer-links">
     <a href="#privacy">Privacy Policy</a>
     <a href="#terms">Terms of Service</a>
