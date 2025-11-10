@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import "./Gallery.css";
 
-import img1 from "../../images/ro.jpg";
-import img2 from "../../images/contactUs.png";
-import img3 from "../../images/Products.png";
-import img4 from "../../images/Ser.jpg";
-import img5 from "../../images/Service.png";
+import img1 from "../../images/roam5.jpg";
+import img2 from "../../images/roam.jpg";
+import img3 from "../../images/roam4.jpg";
+import img4 from "../../images/roam3.jpg";
+import img5 from "../../images/roam2.jpg";
 import img6 from "../../images/ThreeDomes.png";
+import img7 from "../../images/roam1.jpg";
+import img8 from "../../images/img7.jpg";
+import img9 from "../../images/img8.jpg";
+import img10 from "../../images/img9.jpg";
 
-const images = [img1, img2, img3, img4, img5, img6];
+
+const images = [img1, img2, img3, img4, img5, img6 , img7,img8, img9, img10 ];
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
