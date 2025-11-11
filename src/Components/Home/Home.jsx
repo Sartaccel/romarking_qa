@@ -14,7 +14,7 @@ import Chatbot from "../Chatbot/Chatbot";
 
 const Home = () => {
   return (
-    <div className="home-wrapper">
+    <div className="home-wrapper" >
       {/* Section 1 - Image Left / Content Right */}
       <div className="home-container">
         <div className="home-image animate-left">
@@ -62,8 +62,8 @@ const Home = () => {
       </div>
 
       {/* Section 2 - Content Left / Image Right */}
-      <div className="home-container reverse">
-        <div className="home-content animate-left">
+      <div className="home-container1 reverse ">
+        <div className="home-content1 animate-left">
           <h2>Why Choose FRP Solutions:</h2>
           <p>
             • Lightweight structures, easy to transport and assemble
@@ -91,35 +91,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="product-page">
-        {/* ====== FRP COTTAGES SECTION ====== */}
-        {/* <div className="product-wrapper">
-        <div className="product-content">
-          <h2>FRP Prefabricated Cottages</h2>
-          <p>
-            Engineered for <strong>strength and simplicity</strong>, our cottages are:
-          </p>
-          <ul>
-            <li>🏗 Lightweight and easy to install – enabling faster construction anywhere.</li>
-            <li>🌦 Durable and weather resistant – built to withstand humidity, rain, and sunlight.</li>
-            <li>🛡 Corrosion-free and termite-proof – perfect for coastal and rural environments.</li>
-            <li>🌿 Low maintenance and eco-friendly – sustainable living, simplified.</li>
-          </ul>
-          <p>
-            Whether you're traveling solo, as a couple, or with family,{" "}
-            <strong>DOM Houses</strong> offer a peaceful retreat that blends seamlessly into the landscape.
-          </p>
-          <p>
-            <strong>Ideal for:</strong> resorts, eco-retreats, farm stays, CSR housing projects, and tourism developments.
-          </p>
-        </div>
-
-        <div className="product-image">
-          <img src={DomeImg} alt="FRP Prefabricated Cottage" />
-        </div>
-      </div> */}
-
-        <div className="service-container">
+      <div className="product-page ">
+       
+        <div className="service-container" >
           {/* Section 1 */}
           <div className="service-section animate-left">
             <div className="service-text">
