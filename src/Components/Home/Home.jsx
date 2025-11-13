@@ -2,20 +2,13 @@ import React from "react";
 import "./home.css";
 import home from "../../images/homepage.png";
 import home1 from "../../images/homepage2.png";
-import serviceImg1 from "../../images/img22.jpg";
-import serviceImg2 from "../../images/Service2.png";
-import strategicImage from "../../images/staratergy.png";
-import DomeImg from "../../images/ThreeDomes.png";
 
-import AddonsImg from "../../images/Ser.jpg";
-import VisionMissionImg from "../../images/VisMis.png";
-import ImpactImg from "../../images/ImpactAreas.png";
+
 import Chatbot from "../Chatbot/Chatbot";
 import Companyprofile from "../Companyprofile/Companyprofile";
 import Product from "../Product/Product";
 import Service from "../Services/Service";
 import Comparative from "../ComparativeStudy/Comparative";
-import Contact from "../Contact/Contact";
 
 const Home = () => {
   return (
@@ -117,3 +110,4 @@ const Home = () => {
 };
 
 export default Home;
+
