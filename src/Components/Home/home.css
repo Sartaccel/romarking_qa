@@ -1,0 +1,167 @@
+.home-wrapper {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+body{
+  overflow-x: hidden;
+}
+
+.home-container,
+.home-container1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 20px 10%;
+  background: #fff;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.home-container1 {
+  background: #f0f4f7;
+}
+
+.home-image img{
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.home-image1 img{
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.home-image img:hover,
+.home-image1 img:hover {
+  transform: scale(1.05);
+}
+
+.home-content,
+.home-content1 {
+  flex: 1;
+  line-height: 1.7;
+  padding-bottom: 20px;
+}
+
+.home-content h2,
+.home-content1 h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #8e1138;
+}
+
+.home-content h3 {
+  color: #2e3a59;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.home-content p,
+.home-content1 p {
+  color: #444;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.home-content button {
+  background-color: #8e1138;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.home-content button:hover {
+  background-color: #8e1138;
+  transform: translateY(-3px);
+}
+
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* ====== LINKS & HIGHLIGHTS ====== */
+.highlight {
+  color: #8e1138;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.highlight:hover {
+  text-decoration: underline;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 992px) {
+  .home-container,
+  .home-container1
+ {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-content,
+  .home-content1
+ {
+    text-align: center;
+  }
+
+  .home-content button {
+    margin-top: 10px;
+  }
+
+  .home-image img,
+  .home-image1 img
+ {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-container,
+  .home-container1 {
+    padding: 50px 5%;
+  }
+
+  .home-content h2
+  {
+    font-size: 1.6rem;
+  }
+
+  .home-content p
+  {
+    font-size: 0.95rem;
+  }
+}

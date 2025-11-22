@@ -1,0 +1,242 @@
+/* SERVICE PAGE LAYOUT FIXES */
+
+.service-container {
+  width: 100%;
+  padding: 10px 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Section Layout */
+.service-section,
+.frp-service-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Reverse layout for alternating design */
+.service-section.reverse,
+.frp-service-section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* IMAGE STYLING */
+
+.service-image img {
+  width: 250px;        
+  height: 22rem;    
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.6s ease;
+  object-fit: cover;  
+}
+
+.service-image1 img {
+  height: auto;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+
+
+.service-image img:hover{
+  transform: scale(1.05);
+}
+
+
+/* TEXT SECTIONS */
+
+.service-text,
+.service-text1 {
+  flex: 1;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+.service-text h2,
+.service-text1 h2 {
+  font-size: 28px;
+  color: #ba0d89;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  white-space: normal; 
+}
+
+.service-text1 h2 {
+  text-align: center;
+}
+.frp-service-intro{
+  text-align: center;
+}
+
+/* Paragraphs and lists */
+.service-text p,
+.service-text1 p {
+  color: #555;
+  font-size: 17px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.service-text ul,
+.service-text1 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-text ul li,
+.service-text1 ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #292828;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Highlight Links */
+.highlight {
+  color: #d1169c;
+  font-weight: 600;
+  text-decoration: none;
+}
+.highlight:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* FRP SERVICE GRID SECTION */
+/* ============================= */
+.frp-service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.frp-service-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f2f2f2;
+  transition: all 0.3s ease;
+}
+
+.frp-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.frp-service-card h3 {
+  font-size: 1.2rem;
+  color: #e91e63;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.frp-service-card ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ============================= */
+/* ANIMATIONS */
+/* ============================= */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-left {
+  animation: slideInLeft 1s ease forwards;
+}
+.animate-right {
+  animation: slideInRight 1s ease forwards;
+}
+
+/* ============================= */
+/* ✅ RESPONSIVE DESIGN */
+/* ============================= */
+@media (max-width: 1024px) {
+  .service-section,
+  .service-section.reverse,
+  .frp-service-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .service-text h2,
+  .service-text1 h2 {
+    font-size: 22px;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .service-text p,
+  .service-text1 p {
+    text-align: center;
+  }
+
+  .service-image img,
+  .service-image1 img {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .frp-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .frp-service-card {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .service-container {
+    padding: 40px 5%;
+  }
+
+  .service-text h2,
+  .service-text1 h2 {
+    font-size: 20px;
+  }
+
+  .frp-service-card h3 {
+    font-size: 1rem;
+  }
+}

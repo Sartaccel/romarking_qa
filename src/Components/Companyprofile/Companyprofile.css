@@ -1,0 +1,147 @@
+.company-page {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* ===== INTRO ===== */
+.company-intro {
+  text-align: center;
+  padding: 10px 10%;
+  background: #fff;
+}
+
+.company-intro h1 {
+  font-size: 2.5rem;
+  color: #8e1138;
+  font-weight: 700;
+}
+
+.company-intro h1 span {
+  color: #8e1138;
+}
+
+.company-intro p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* ===== VISION / MISSION SECTION ===== */
+.vision-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  padding: 10px 10%;
+  background-color: #fdf3f6;
+}
+
+.vision-text {
+  flex: 1 1 500px;
+  max-width: 600px;
+}
+
+.vision-text h2 {
+  color: #8e1138;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.vision-text p {
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.vision-text ul {
+  list-style-type: none;
+  padding: 0;
+  color: #444;
+}
+
+.vision-text li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.vision-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.vision-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== IMPACT SECTION ===== */
+.impact-section {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 10%;
+  background-color: #fff;
+}
+
+.impact-text {
+  flex: 1 1 500px;
+  max-width: 600px;
+}
+
+.impact-text h2 {
+  color: #8e1138;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.impact-text h3 {
+  color: #8e1138;
+  margin-top: 25px;
+  font-size: 1.4rem;
+}
+
+.impact-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.impact-text li {
+  margin-bottom: 10px;
+}
+
+.features-list li {
+  font-weight: 500;
+}
+
+.impact-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.impact-image img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .vision-section,
+  .impact-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vision-text,
+  .impact-text {
+    max-width: 100%;
+  }
+}
