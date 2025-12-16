@@ -50,7 +50,7 @@ const Contact = () => {
           </p>
           <div className="contactus-buttons">
        <a href="/gallery">    <button className="contactus-btn">Explore DOME House Models</button> </a>
-       <a href="/reachout">   <button className="contactus-btn outline">Partner With Us</button></a>  
+       {/* <a href="/reachout">   <button className="contactus-btn outline">Partner With Us</button></a>   */}
            
           </div>
         </div>

@@ -40,7 +40,7 @@
 }
 
 .contactus-btn {
-  background-color: #8e1138;
+  background-color: #f6459d;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -152,7 +152,7 @@
   }
 
   .contactus-form-section {
-    padding: 60px 6%;
+    padding: 0px 6%;
   }
 
   .form-wrapper {
@@ -176,7 +176,7 @@
   .form-group input,
   textarea {
     font-size: 0.95rem;
-    padding: 10px 12px;
+    padding: 10px 10px;
   }
 
   .contact-form button {

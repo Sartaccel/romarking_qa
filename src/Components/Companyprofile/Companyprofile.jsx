@@ -54,12 +54,12 @@ const Companyprofile = () => {
         </div>
 
         <div className="impact-text">
-          <h2>🧱 Our Impact Areas</h2>
+          <h2> Our Impact Areas</h2>
           <ul>
-            <li><strong>🏡 Housing & Infrastructure:</strong> FRP-based prefabricated cottages, sanitation, and utility solutions for community housing, CSR projects, and institutional use.</li>
-            <li><strong>🏖 Tourism & Resorts:</strong> Rapid-deploy eco-cottages, modular pools, and landscaping designs tailored for resorts and retreats.</li>
-            <li><strong>🏭 Industrial & Utility Solutions:</strong> FRP tanks, septic systems, and structural components built for longevity in harsh environments.</li>
-            <li><strong>🌿 Environment & Green Design:</strong> Products that minimize waste, reduce carbon footprint, and support circular economy goals.</li>
+            <li><strong>Housing & Infrastructure:</strong> FRP-based prefabricated cottages, sanitation, and utility solutions for community housing, CSR projects, and institutional use.</li>
+            <li><strong>Tourism & Resorts:</strong> Rapid-deploy eco-cottages, modular pools, and landscaping designs tailored for resorts and retreats.</li>
+            <li><strong>Industrial & Green Design:</strong> FRP tanks, septic systems, and structural components built for longevity in harsh environments.</li>
+            <li><strong>Environment & Green Design:</strong> Products that minimize waste, reduce carbon footprint, and support circular economy goals.</li>
           </ul>
 
           <h3>🌟 Key Features</h3>
@@ -68,7 +68,6 @@ const Companyprofile = () => {
             <li>🌦 Weather & corrosion resistant materials for all terrains</li>
             <li>🔧 Low maintenance, high ROI for developers and investors</li>
             <li>🌱 Eco-friendly, scalable manufacturing with consistent quality</li>
-            <li>💰 Cost Effective with Fast ROI</li>
           </ul>
         </div>
       </section>

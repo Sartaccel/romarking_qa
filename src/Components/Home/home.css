@@ -164,4 +164,9 @@ body{
   {
     font-size: 0.95rem;
   }
+
+  .home-content p,
+  .home-content1 p {
+    text-align: left;
+  }
 }

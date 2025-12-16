@@ -13,11 +13,11 @@ const Product = () => {
           <p>
             Engineered for <strong>strength and simplicity</strong>, our cottages are:
           </p>
-          <ul>
-            <li>🏗 Lightweight and easy to install – enabling faster construction anywhere.</li>
-            <li>🌦 Durable and weather resistant – built to withstand humidity, rain, and sunlight.</li>
-            <li>🛡 Corrosion-free and termite-proof – perfect for coastal and rural environments.</li>
-            <li>🌿 Low maintenance and eco-friendly – sustainable living, simplified.</li>
+          <ul className="points-list">
+            <li>&bull; Lightweight and easy to install – enabling faster construction anywhere.</li>
+            <li>&bull; Durable and weather resistant – built to withstand humidity, rain, and sunlight.</li>
+            <li>&bull; Corrosion-free and termite-proof – perfect for coastal and rural environments.</li>
+            <li>&bull; Low maintenance and eco-friendly – sustainable living, simplified.</li>
           </ul>
           <p>
             Whether you're traveling solo, as a couple, or with family,{" "}

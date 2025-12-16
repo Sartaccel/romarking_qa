@@ -104,11 +104,23 @@ const Chatbot = () => {
       answer:
         "Yes, you can download them from the Home or Contact pages of our website.",
     },
-    {
-      question: "Do you have social media or LinkedIn presence?",
-      answer:
-        "Yes — follow us on LinkedIn at https://www.linkedin.com/company/romarking/ for updates and insights.",
-    },
+   {
+  question: "Do you have social media or LinkedIn presence?",
+  answer: (
+    <>
+      Yes — follow us on LinkedIn at{" "}
+      <a 
+        href="https://www.linkedin.com/company/romarking/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        style={{ color: "#0077b5", fontWeight: "400" }}
+      >
+        https://www.linkedin.com/company/romarking/
+      </a>{" "}
+      for updates and insights.
+    </>
+  ),
+}
   ];
 
   const handleUserQuestion = (question, answer) => {

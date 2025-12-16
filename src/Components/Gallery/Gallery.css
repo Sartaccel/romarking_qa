@@ -1,61 +1,6 @@
 .gallery-page {
-  padding: 50px 10%;
   text-align: center;
-  background-color: #f9fafb;
-  font-family: "Poppins", sans-serif;
-}
-
-.gallery-title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 40px;
-  color: #e12f88;
-}
-
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-}
-
-.gallery-item {
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-item img {
-  width: 130%;
-  height: 300px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.gallery-item:hover img {
-  transform: scale(1.05);
-}
-
-.gallery-item:hover {
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
-}
-
-/* Responsive design */
-@media (max-width: 992px) {
-  .gallery-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .gallery-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-.gallery-page {
-  text-align: center;
-  padding: 10px 20px;
+  padding: 10px 80px 10px 10px;
   background-color: #f9fafb;
 }
 
@@ -110,8 +55,8 @@
 .close-btn {
   position: absolute;
   top: 30px;
-  right: 40px;
-  font-size: 40px;
+  right: 15px;
+  font-size: 20px;
   color: #fff;
   cursor: pointer;
   z-index: 10000;
@@ -122,3 +67,18 @@
 .close-btn:hover {
   color: #b8860b; /* gold color on hover */
 }
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+

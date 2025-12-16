@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom"; // ⬅️ add NavLink
 import "./navbar.css";
 import logo from "../../images/RomarLogo.png";
 
@@ -9,14 +9,11 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => setMobileMenu(!mobileMenu);
 
-  // ✅ Function to close menu when clicking a link
- 
-
-    const closeMenu = () => {
+  const closeMenu = () => {
     setMobileMenu(false);
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // adds smooth scrolling effect
+      behavior: "smooth",
     });
   };
 
@@ -38,13 +35,70 @@ const Navbar = () => {
       {/* Nav Links */}
       <div className={`nav-links ${mobileMenu ? "active" : ""}`}>
         <ul>
-          <li><Link to="/" onClick={closeMenu}>Home</Link></li>
-          <li><Link to="/products" onClick={closeMenu}>Products</Link></li>
-          <li><Link to="/company-profile" onClick={closeMenu}>Company Profile</Link></li>
-          <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
-          <li><Link to="/comparative-study" onClick={closeMenu}>Comparative Study</Link></li>
-          <li><Link to="/gallery" onClick={closeMenu}>Dome House Models</Link></li>
-          <li><Link to="/reachout" onClick={closeMenu}>Reachout</Link></li>
+          <li>
+            <NavLink
+              to="/"
+              onClick={closeMenu}
+              className={({ isActive }) => (isActive ? "active" : "")}
+              end
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/products"
+              onClick={closeMenu}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Products
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/company-profile"
+              onClick={closeMenu}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Company Profile
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/services"
+              onClick={closeMenu}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Services
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/comparative-study"
+              onClick={closeMenu}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Comparative Study
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/gallery"
+              onClick={closeMenu}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Dome House Models
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/reachout"
+              onClick={closeMenu}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Reach Out
+            </NavLink>
+          </li>
         </ul>
       </div>
 

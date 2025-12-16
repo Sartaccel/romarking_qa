@@ -33,12 +33,13 @@
 /* IMAGE STYLING */
 
 .service-image img {
-  width: 250px;        
-  height: 22rem;    
+  width: 300px;        
+  height: 26rem;    
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   transition: transform 0.6s ease;
   object-fit: cover;  
+  margin-top: 20px;
 }
 
 .service-image1 img {
@@ -130,7 +131,7 @@
 .frp-service-card {
   background: #fff;
   border-radius: 15px;
-  padding: 25px;
+  padding: 10px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   border: 1px solid #f2f2f2;
   transition: all 0.3s ease;
@@ -195,7 +196,7 @@
   .service-section.reverse,
   .frp-service-section {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     gap: 40px;
   }
 

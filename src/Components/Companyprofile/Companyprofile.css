@@ -128,6 +128,8 @@
 .impact-image img {
   width: 100%;
   max-width: 380px;
+    max-height: 500px;
+      margin-top: 30px; 
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
@@ -143,5 +145,14 @@
   .vision-text,
   .impact-text {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 576px){
+  .impact-text{
+      text-align: left;
+  }
+  .vision-text{
+    text-align: left;
   }
 }

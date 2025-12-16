@@ -113,7 +113,7 @@ const Comparative = () => {
 <div className="takeaway-section">
   {/* LEFT SIDE (EMOJI STYLE) */}
   <div className="takeaway-left">
-    <h2 className="takeaway-heading1" >💡 Strategic Takeaways</h2>
+    <h2 className="takeaway-heading1" >Strategic Takeaways</h2>
     <ul className="takeaway-points">
       <li>
         🏠 <b>FRP Dome Houses</b> are ideal for <i>scalable, modular deployments</i> in

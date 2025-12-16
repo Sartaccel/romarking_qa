@@ -9,7 +9,8 @@ import Product from './Components/Product/Product';
 import Companyprofile from './Components/Companyprofile/Companyprofile';
 import Contact from './Components/Contact/Contact';
 import Gallery from './Components/Gallery/Gallery';
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+       <ToastContainer />
     </Router>
   );
 }

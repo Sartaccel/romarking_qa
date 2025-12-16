@@ -7,6 +7,7 @@ import Companyprofile from "../Companyprofile/Companyprofile";
 import Product from "../Product/Product";
 import Service from "../Services/Service";
 import Comparative from "../ComparativeStudy/Comparative";
+import Romarkingpdf from "../../images/RomarKing_PDF.pdf"
 const Home = () => {
   return (
     <div className="home-wrapper" >
@@ -22,7 +23,7 @@ const Home = () => {
             and products
           </h2>
           <h3>
-            The Future of Sustainable Living — discover eco-Luxury with
+            The Future of Sustainable Living — Discover Eco-Luxury with
             Romarking
           </h3>
           <p>Where nature meets comfort — and every stay makes a difference.</p>
@@ -40,19 +41,12 @@ const Home = () => {
             <button>Learn More</button>
           </a>{" "}
           &nbsp; &nbsp;
+          <a href={Romarkingpdf} download>
           <button
-            onClick={() => {
-              const link = document.createElement("a");
-              link.href =
-                process.env.PUBLIC_URL + "/images/RomarKing_FRP_Housing.pdf";
-              link.download = "Romarking_FRP_Housing";
-              document.body.appendChild(link);
-              link.click();
-              document.body.removeChild(link);
-            }}
           >
             Download Our PDF
           </button>
+           </a>
         </div>
       </div>
 
@@ -61,23 +55,24 @@ const Home = () => {
   <div className="home-content1 animate-left">
     <h2>Why Choose FRP Solutions:</h2>
     <p>
-      • Lightweight structures, easy to transport and assemble
+      • Lightweight structures, easy to transport and assemble for rapid deployment.
       <br />
-      • Weather and corrosion resistant materials for all terrains
+      • Weather and corrosion resistant materials for all terrains and climates worldwide.
       <br />
-      • Low maintenance, high ROI for developers and investors
-      <br />• Eco-friendly, scalable manufacturing with consistent quality
+      • Low maintenance, high ROI for developers and investors with long-term stability.
+      <br />
+      • Eco-friendly, scalable manufacturing with consistent quality every single time.
     </p>
 
     <h2>Key Benefits:</h2>
     <p>
-      🏊 Turnkey modular solutions for tourism and healthcare
+      • Turnkey modular solutions for tourism and healthcare across multiple global sectors.
       <br />
-      🌳 Eco-smart design with minimal environmental impact
+      • Eco-smart design with minimal environmental impact and maximum resource efficiency.
       <br />
-      ⚡ Rapid installation across urban, rural, and remote zones
+      • Rapid installation across urban, rural, and remote zones with zero disruption.
       <br />
-      🏠 Customizable interiors for comfort, care, or adventure
+      • Customizable interiors for comfort, care, or adventure in any lifestyle setting.
     </p>
   </div>
 
