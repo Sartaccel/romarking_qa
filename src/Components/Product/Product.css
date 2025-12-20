@@ -4,7 +4,6 @@
   color: #333;
 }
 
-/* ====== FRP COTTAGES SECTION ====== */
 .product-wrapper {
   display: flex;
   align-items: center;
@@ -55,7 +54,6 @@
   transform: scale(1.03);
 }
 
-/* Divider */
 .divider {
   border: none;
   border-top: 3px solid #8e1138;
@@ -63,7 +61,6 @@
   margin: 50px auto;
 }
 
-/* ====== FRP ADD-ONS SECTION ====== */
 .addons-wrapper {
   display: flex;
   align-items: center;
@@ -95,7 +92,6 @@
   font-weight: 700;
   margin-bottom: 15px;
 }
-
 
 .addons-intro {
   color: #444;
@@ -135,16 +131,15 @@
 }
 
 .points-list {
-  list-style-type: disc;   /* default bullet */
-  padding-left: 20px;      /* space for alignment */
+  list-style-type: disc;
+  padding-left: 20px;
   margin: 0;
 }
 
 .points-list li {
-  margin-bottom: 8px;      /* spacing between points */
+  margin-bottom: 8px;
   line-height: 1.5;
 }
-
 
 @media (max-width: 900px) {
   .product-wrapper,
@@ -161,7 +156,7 @@
   gap: 3rem;
   padding: 20px 10%;
   background-color: #f8f9fa;
-  flex-wrap: wrap; /* makes it responsive */
+  flex-wrap: wrap;
 }
 
 .addons-image {
@@ -171,7 +166,7 @@
 
 .addons-image img {
   max-width: 100%;
-   max-height: 700px;
+  max-height: 700px;
   height: auto;
   margin-top: 30px;
   border-radius: 16px;
@@ -186,7 +181,7 @@
 .addons-content h2 {
   font-size: 2rem;
   margin-bottom: 15px;
-  color:  #a7204b;
+  color: #a7204b;
 }
 
 .addons-intro {
@@ -231,7 +226,6 @@
   font-size: 0.95rem;
 }
 
-/* ✅ Responsive adjustments */
 @media (max-width: 900px) {
   .addons-wrapper {
     flex-direction: column;
@@ -248,4 +242,3 @@
     text-align: left !important;
   }
 }
-

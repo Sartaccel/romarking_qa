@@ -1,8 +1,7 @@
-
 .comparative-container {
   padding: 10px 40px;
   background-color: #f9f9ff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   margin-top: 0rem;
 }
@@ -34,14 +33,14 @@
 
 .comparative-table th {
   background-color: #d7e3fc;
-  color:#ba0d89;
+  color: #ba0d89;
   text-align: center;
   font-weight: bold;
 }
 
 .comparative-table td:first-child {
   font-weight: bold;
-  color:#ba0d89;
+  color: #ba0d89;
 }
 
 .comparative-table tr:nth-child(even) {
@@ -52,26 +51,24 @@
   font-size: 1rem;
   color: #333;
 }
-/* STRATEGIC TAKEAWAYS SECTION */
 .takeaway-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
   margin-top: 20px;
-  flex-wrap: nowrap; /* ❗ prevent image from going below */
+  flex-wrap: nowrap;
 }
 
-/* LEFT SIDE */
 .takeaway-left {
-  flex: 0 0 58%; /* lock text width */
+  flex: 0 0 58%;
 }
 
 .takeaway-heading1 {
   font-size: 1.8rem;
-  color:#ba0d89;
+  color: #ba0d89;
   font-weight: 700;
-   font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 25px;
   text-align: left;
 }
@@ -91,12 +88,11 @@
 }
 
 .takeaway-points b {
-  color:#ba0d89;
+  color: #ba0d89;
 }
 
-/* RIGHT SIDE IMAGE */
 .takeaway-right {
-  flex: 0 0 38%; /* consistent size */
+  flex: 0 0 38%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -110,7 +106,6 @@
   object-fit: contain;
 }
 
-/* RESPONSIVE FIX */
 @media (max-width: 992px) {
   .takeaway-section {
     flex-wrap: wrap;
@@ -134,8 +129,6 @@
   }
 }
 
-
-/* ✅ Make table scrollable on mobile */
 @media (max-width: 768px) {
   .comparative-table {
     font-size: 0.9rem;

@@ -12,7 +12,6 @@ const Contact = () => {
     setLoading(true);
 
     const formData = new FormData(e.target);
-    // ✅ Use your new Web3Forms access key here
     formData.append("access_key", "d5f61135-8ecb-4f5e-bd11-17d5bc694d20");
 
     const response = await fetch("https://api.web3forms.com/submit", {
@@ -39,7 +38,6 @@ const Contact = () => {
 
   return (
     <div className="contactus-page">
-      {/* ===== Hero Section ===== */}
       <section className="contactus-section">
         <div className="contactus-content">
           <h2 className="contactus-title">Ready to Build the Future?</h2>
@@ -49,9 +47,13 @@ const Contact = () => {
             purpose. Let’s co-create spaces that inspire, heal, and endure.
           </p>
           <div className="contactus-buttons">
-       <a href="/gallery">    <button className="contactus-btn">Explore DOME House Models</button> </a>
-       {/* <a href="/reachout">   <button className="contactus-btn outline">Partner With Us</button></a>   */}
-           
+            <a href="/gallery">
+              {" "}
+              <button className="contactus-btn">
+                Explore DOME House Models
+              </button>{" "}
+            </a>
+            {/* <a href="/reachout">   <button className="contactus-btn outline">Partner With Us</button></a>   */}
           </div>
         </div>
 

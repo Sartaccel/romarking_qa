@@ -4,7 +4,6 @@
   background-color: #f9f9f9;
 }
 
-/* ===== INTRO ===== */
 .company-intro {
   text-align: center;
   padding: 10px 10%;
@@ -28,7 +27,6 @@
   line-height: 1.7;
 }
 
-/* ===== VISION / MISSION SECTION ===== */
 .vision-section {
   display: flex;
   flex-wrap: wrap;
@@ -78,7 +76,6 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== IMPACT SECTION ===== */
 .impact-section {
   display: flex;
   flex-wrap: wrap-reverse;
@@ -128,13 +125,12 @@
 .impact-image img {
   width: 100%;
   max-width: 380px;
-    max-height: 500px;
-      margin-top: 30px; 
+  max-height: 500px;
+  margin-top: 30px;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .vision-section,
   .impact-section {
@@ -148,11 +144,11 @@
   }
 }
 
-@media (max-width: 576px){
-  .impact-text{
-      text-align: left;
+@media (max-width: 576px) {
+  .impact-text {
+    text-align: left;
   }
-  .vision-text{
+  .vision-text {
     text-align: left;
   }
 }

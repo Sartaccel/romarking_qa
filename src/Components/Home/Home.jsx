@@ -7,11 +7,10 @@ import Companyprofile from "../Companyprofile/Companyprofile";
 import Product from "../Product/Product";
 import Service from "../Services/Service";
 import Comparative from "../ComparativeStudy/Comparative";
-import Romarkingpdf from "../../images/RomarKing_PDF.pdf"
+import Romarkingpdf from "../../images/RomarKing_PDF.pdf";
 const Home = () => {
   return (
-    <div className="home-wrapper" >
-      {/* Section 1 - Image Left / Content Right */}
+    <div className="home-wrapper">
       <div className="home-container">
         <div className="home-image animate-left">
           <img src={home} alt="FRP Smart Living" />
@@ -42,59 +41,61 @@ const Home = () => {
           </a>{" "}
           &nbsp; &nbsp;
           <a href={Romarkingpdf} download>
-          <button
-          >
-            Download Our PDF
-          </button>
-           </a>
+            <button>Download Our PDF</button>
+          </a>
         </div>
       </div>
 
-      {/* Section 2 - Content Left / Image Right */}
-<div className="home-container1">
-  <div className="home-content1 animate-left">
-    <h2>Why Choose FRP Solutions:</h2>
-    <p>
-      • Lightweight structures, easy to transport and assemble for rapid deployment.
-      <br />
-      • Weather and corrosion resistant materials for all terrains and climates worldwide.
-      <br />
-      • Low maintenance, high ROI for developers and investors with long-term stability.
-      <br />
-      • Eco-friendly, scalable manufacturing with consistent quality every single time.
-    </p>
+      <div className="home-container1">
+        <div className="home-content1 animate-left">
+          <h2>Why Choose FRP Solutions:</h2>
+          <p>
+            • Lightweight structures, easy to transport and assemble for rapid
+            deployment.
+            <br />
+            • Weather and corrosion resistant materials for all terrains and
+            climates worldwide.
+            <br />
+            • Low maintenance, high ROI for developers and investors with
+            long-term stability.
+            <br />• Eco-friendly, scalable manufacturing with consistent quality
+            every single time.
+          </p>
 
-    <h2>Key Benefits:</h2>
-    <p>
-      • Turnkey modular solutions for tourism and healthcare across multiple global sectors.
-      <br />
-      • Eco-smart design with minimal environmental impact and maximum resource efficiency.
-      <br />
-      • Rapid installation across urban, rural, and remote zones with zero disruption.
-      <br />
-      • Customizable interiors for comfort, care, or adventure in any lifestyle setting.
-    </p>
-  </div>
+          <h2>Key Benefits:</h2>
+          <p>
+            • Turnkey modular solutions for tourism and healthcare across
+            multiple global sectors.
+            <br />
+            • Eco-smart design with minimal environmental impact and maximum
+            resource efficiency.
+            <br />
+            • Rapid installation across urban, rural, and remote zones with zero
+            disruption.
+            <br />• Customizable interiors for comfort, care, or adventure in
+            any lifestyle setting.
+          </p>
+        </div>
 
-  <div className="home-image1 animate-right">
-    <img src={home1} alt="FRP Solutions" />
-  </div>
-</div>
-<div id="products" className="animate-fade">
-  <Product />
-</div>
+        <div className="home-image1 animate-right">
+          <img src={home1} alt="FRP Solutions" />
+        </div>
+      </div>
+      <div id="products" className="animate-fade">
+        <Product />
+      </div>
 
-<div id="company-profile" className="animate-fade">
-  <Companyprofile />
-</div>
+      <div id="company-profile" className="animate-fade">
+        <Companyprofile />
+      </div>
 
-<div id="services" className="animate-fade">
-  <Service />
-</div>
+      <div id="services" className="animate-fade">
+        <Service />
+      </div>
 
-<div id="comparative" className="animate-fade">
-  <Comparative />
-</div>
+      <div id="comparative" className="animate-fade">
+        <Comparative />
+      </div>
 
       <Chatbot />
     </div>

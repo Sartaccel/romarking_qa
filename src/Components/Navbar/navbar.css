@@ -1,11 +1,9 @@
 .logo img {
-    height: 50px;
-   margin-left: 2rem;
-    width: auto;
+  height: 50px;
+  margin-left: 2rem;
+  width: auto;
 }
 
-
-/* Base Navbar */
 .navbar {
   position: relative;
   top: 0;
@@ -19,14 +17,13 @@
   justify-content: space-between;
 
   background: #efdde6;
-  padding: 10px 10px; /* 🔽 Reduced from 40px to 20px */
+  padding: 10px 10px;
   box-shadow: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000;
   transition: all 0.3s ease-in-out;
 }
 
-/* When scrolled */
 .navbar.scrolled {
   position: fixed;
   top: 0;
@@ -34,14 +31,12 @@
   right: 0;
   background: #efdde6;
   box-shadow: 0 2px 8px rgba(30, 30, 30, 0.08);
-  padding: 12px 24px; /* 🔽 Reduced for smaller fixed navbar */
+  padding: 12px 24px;
 }
-
 
 .navbar.scrolled .logo img {
   height: 40px;
 }
-
 
 .logo {
   font-size: 1.5rem;
@@ -49,7 +44,6 @@
   letter-spacing: 1px;
 }
 
-/* Desktop links */
 .nav-links ul {
   list-style: none;
   display: flex;
@@ -68,7 +62,6 @@
   color: #8e1138;
 }
 
-/* Dropdown */
 .dropdown-menu {
   position: absolute;
   top: 35px;
@@ -98,7 +91,6 @@
   display: block;
 }
 
-/* Mobile Toggle Button */
 .mobile-toggle {
   display: none;
   flex-direction: column;
@@ -109,12 +101,11 @@
 .mobile-toggle span {
   width: 25px;
   height: 3px;
-  background:  #8e1138;
+  background: #8e1138;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
 
-/* Animate toggle into X */
 .mobile-toggle.open span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -127,9 +118,8 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Active menu item */
 .nav-links a.active {
-  color: #8e1138;              /* highlight colour */
+  color: #8e1138;
   border-bottom: 2px solid #8e1138;
   font-weight: 600;
 }
@@ -137,8 +127,6 @@
   color: #8e1138;
 }
 
-
-/* Mobile Styles */
 @media (max-width: 992px) {
   .mobile-toggle {
     display: flex;
@@ -157,7 +145,7 @@
   }
 
   .nav-links.active {
-    max-height: 500px; /* adjust based on content */
+    max-height: 500px;
   }
 
   .nav-links ul {
@@ -170,7 +158,6 @@
     border-bottom: 1px solid #003366;
   }
 
-  /* Dropdown in mobile */
   .dropdown-menu {
     position: relative;
     top: 0;
@@ -183,10 +170,10 @@
   }
 
   .dropdown:hover .dropdown-menu {
-    display: block; /* desktop only */
+    display: block;
   }
 
   .dropdown.open .dropdown-menu {
-    max-height: 200px; /* adjust based on content */
+    max-height: 200px;
   }
 }

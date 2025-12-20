@@ -1,17 +1,17 @@
 .logo1 img {
-    height: 50px;
-   /* margin-left: 2rem; */
-    width: auto;
+  height: 50px;
+  /* margin-left: 2rem; */
+  width: auto;
 }
 
 .footer {
-  background:#f4e2eb;
+  background: #f4e2eb;
   padding: 60px 40px 30px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #333;
   border-top: 1px solid #eee;
   border-radius: 25px 25px 0 0;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .footer-container {
@@ -60,10 +60,9 @@
   color: #ba0d89;
 }
 
-/* Social icons */
 .social-icons a {
   color: #333;
-  margin-right: 10px;
+  margin-left: 10px;
   transition: color 0.3s;
 }
 
@@ -71,7 +70,10 @@
   color: #ba0d89;
 }
 
-/* Bottom section */
+.social-title {
+  margin-left: 10px;
+}
+
 .footer-bottom {
   display: flex;
   flex-wrap: wrap;
@@ -93,7 +95,6 @@
   margin-bottom: 10px;
 }
 
-
 .footer-bottom a {
   color: #555;
   text-decoration: none;
@@ -113,6 +114,7 @@ hr {
   margin-top: 0;
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
   /* gap: 6px; */
 }
 
@@ -122,7 +124,7 @@ hr {
   gap: 8px;
   margin-bottom: 10px;
 }
-/* Responsive */
+
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr;
@@ -144,12 +146,12 @@ hr {
 }
 
 .mail-icon {
-  color: #007bff; /* blue color */
+  color: #007bff;
   font-size: 18px;
 }
 .download-btn {
   margin-top: 10px;
-  background-color:#f6459d;
+  background-color: #f6459d;
   color: white;
   border: none;
   padding: 10px 16px;
@@ -161,11 +163,9 @@ hr {
 }
 
 .download-btn:hover {
-  background-color:#df34ae;;
+  background-color: #df34ae;
 }
 
-
-/* ===== Contact Form Section ===== */
 .contactus-form-section {
   background-color: #fff;
   padding: 10px 10%;
@@ -240,7 +240,6 @@ textarea:focus {
   display: inline-block;
   vertical-align: middle;
 }
-/* Responsive Footer for Mobile View */
 
 .message-box {
   position: relative;
@@ -249,7 +248,7 @@ textarea:focus {
 
 .message-box textarea {
   width: 100%;
-  padding-bottom: 22px; 
+  padding-bottom: 22px;
   padding-right: 2px;
 }
 
@@ -290,10 +289,10 @@ textarea:focus {
   }
 
   .social-icons {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
   }
 
   .footer-bottom {

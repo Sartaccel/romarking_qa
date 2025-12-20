@@ -4,7 +4,6 @@
   background-color: #f9fafb;
 }
 
-/* ===== Hero Section ===== */
 .contactus-section {
   display: flex;
   align-items: center;
@@ -78,12 +77,14 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
-
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
 
 @media (max-width: 900px) {
   .contactus-section {
@@ -96,7 +97,6 @@
   }
 }
 
-/* ===== Responsive (Tablet) ===== */
 @media (max-width: 900px) {
   .contactus-section {
     flex-direction: column;
@@ -122,7 +122,6 @@
   }
 }
 
-/* ===== Responsive (Mobile) ===== */
 @media (max-width: 600px) {
   .contactus-section {
     padding: 40px 5%;
@@ -186,7 +185,6 @@
   }
 }
 
-/* ===== Extra Small (<= 400px) ===== */
 @media (max-width: 400px) {
   .contactus-title {
     font-size: 1.5rem;

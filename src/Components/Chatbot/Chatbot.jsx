@@ -5,7 +5,10 @@ import botIcon from "../../images/chat.png";
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { sender: "bot", text: "Hi 👋 I’m Romarking Assistant! How can I help you today?" },
+    {
+      sender: "bot",
+      text: "Hi 👋 I’m Romarking Assistant! How can I help you today?",
+    },
   ]);
 
   const faqList = [
@@ -104,23 +107,23 @@ const Chatbot = () => {
       answer:
         "Yes, you can download them from the Home or Contact pages of our website.",
     },
-   {
-  question: "Do you have social media or LinkedIn presence?",
-  answer: (
-    <>
-      Yes — follow us on LinkedIn at{" "}
-      <a 
-        href="https://www.linkedin.com/company/romarking/" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        style={{ color: "#0077b5", fontWeight: "400" }}
-      >
-        https://www.linkedin.com/company/romarking/
-      </a>{" "}
-      for updates and insights.
-    </>
-  ),
-}
+    {
+      question: "Do you have social media or LinkedIn presence?",
+      answer: (
+        <>
+          Yes — follow us on LinkedIn at{" "}
+          <a
+            href="https://www.linkedin.com/company/romarking/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#0077b5", fontWeight: "400" }}
+          >
+            https://www.linkedin.com/company/romarking/
+          </a>{" "}
+          for updates and insights.
+        </>
+      ),
+    },
   ];
 
   const handleUserQuestion = (question, answer) => {
@@ -133,15 +136,15 @@ const Chatbot = () => {
 
   return (
     <div>
-      {/* Floating toggle button with hint */}
       <div className="chatbot-wrapper">
-        {!isOpen && <div className="chatbot-hint">Ask your question here 💬</div>}
+        {!isOpen && (
+          <div className="chatbot-hint">Ask your question here 💬</div>
+        )}
         <div className="chatbot-toggle" onClick={() => setIsOpen(!isOpen)}>
           <img src={botIcon} alt="Chatbot Icon" />
         </div>
       </div>
 
-      {/* Chatbot window */}
       {isOpen && (
         <div className="chatbot-container animate-popup">
           <div className="chatbot-header">

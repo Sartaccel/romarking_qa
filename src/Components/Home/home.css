@@ -4,7 +4,7 @@
   background-color: #f9f9f9;
   overflow-x: hidden;
 }
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -26,7 +26,7 @@ body{
   background: #f0f4f7;
 }
 
-.home-image img{
+.home-image img {
   width: 100%;
   max-width: 500px;
   border-radius: 20px;
@@ -34,7 +34,7 @@ body{
   transition: transform 0.4s ease;
 }
 
-.home-image1 img{
+.home-image1 img {
   width: 100%;
   max-width: 450px;
   border-radius: 20px;
@@ -91,7 +91,6 @@ body{
   transform: translateY(-3px);
 }
 
-
 @keyframes fadeInLeft {
   to {
     opacity: 1;
@@ -126,15 +125,13 @@ body{
 /* ====== RESPONSIVE DESIGN ====== */
 @media (max-width: 992px) {
   .home-container,
-  .home-container1
- {
+  .home-container1 {
     flex-direction: column;
     text-align: center;
   }
 
   .home-content,
-  .home-content1
- {
+  .home-content1 {
     text-align: center;
   }
 
@@ -143,8 +140,7 @@ body{
   }
 
   .home-image img,
-  .home-image1 img
- {
+  .home-image1 img {
     max-width: 90%;
   }
 }
@@ -155,13 +151,11 @@ body{
     padding: 50px 5%;
   }
 
-  .home-content h2
-  {
+  .home-content h2 {
     font-size: 1.6rem;
   }
 
-  .home-content p
-  {
+  .home-content p {
     font-size: 0.95rem;
   }
 

@@ -1,19 +1,16 @@
 import React, { useState } from "react";
-import { Linkedin } from "lucide-react";
 import { SiLinkedin } from "react-icons/si";
 import "./footer.css";
 import { FaEnvelope } from "react-icons/fa";
 import logo from "../../images/RomarLogo.png";
-import { toast } from "react-toastify"; 
-import Romarkingpdf from "../../images/RomarKing_PDF.pdf"
+import { toast } from "react-toastify";
+import Romarkingpdf from "../../images/RomarKing_PDF.pdf";
+import { FaPhoneSquareAlt } from "react-icons/fa";
 
 const Footer = () => {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // ===================
-  // WEB3FORMS SUBMIT
-  // ===================
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -30,7 +27,7 @@ const Footer = () => {
     setLoading(false);
 
     if (data.success) {
-      toast.success("Saved successfully 🎉", {
+      toast.success("Saved successfully", {
         position: "top-right",
         autoClose: 3000,
       });
@@ -38,7 +35,7 @@ const Footer = () => {
       e.target.reset();
       setMessage("");
     } else {
-      toast.error("Failed to save ❌", {
+      toast.error("Failed to save", {
         position: "top-right",
         autoClose: 3000,
       });
@@ -48,80 +45,88 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        
-        {/* Company Info */}
         <div className="footer-section company">
-  <div className="logo1">
-    <a href="#home">
-      <img src={logo} alt="Romarking Logo" />
-    </a>
-  </div>
+          <div className="logo1">
+            <a href="/">
+              <img src={logo} alt="Romarking Logo" />
+            </a>
+          </div>
 
-  <div className="footer-info">
-    <div className="footer-section-contact">
-      <h3>Contact Us</h3>
+          <div className="footer-info">
+            <div className="footer-section-contact">
+              <h3>Contact Us</h3>
 
-      <a href="tel:+917092777277">📞 +91 70927 77277</a>
+              <a href="tel:+917092777277">
+                <FaPhoneSquareAlt size={18} /> +91 70927 77277
+              </a>
 
-      <a href="mailto:contact@romarking.in" className="contact-email">
-        <FaEnvelope className="mail-icon" /> contact@romarking.in
-      </a>
-    </div>
-<div className="linkedin">
-    <div className="social-icons">
-      <a
-        href="https://www.linkedin.com/company/romarking/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="LinkedIn"
-      >
-        <SiLinkedin size={25} />
-      </a>
-    </div>
-    </div>
-  </div>
-</div>
+              <a href="mailto:contact@romarking.in" className="contact-email">
+                <FaEnvelope className="mail-icon" /> contact@romarking.in
+              </a>
+            </div>
 
+            <div className="linkedin">
+              <h3 className="social-title">Connect With Us</h3>
 
-        {/* Address Section */}
+              <div className="social-icons">
+                <a
+                  href="https://www.linkedin.com/company/romarking/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <SiLinkedin size={25} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="footer-section address">
           <h3>Industrial Address</h3>
           <p>
-            No.7 Sirpi Industrial Estate, Singarampalayam, Kinathukadavu,<br />
+            No.7 Sirpi Industrial Estate, Singarampalayam, Kinathukadavu,
+            <br />
             Coimbatore-642 109.
           </p>
 
-          {/* Download PDF Button */}
           <a href={Romarkingpdf} download>
-          <button
-           className="download-btn"
-          >
-            Download Our PDF
-          </button>
+            <button className="download-btn">Download Our PDF</button>
           </a>
         </div>
 
-        {/* Quick Links */}
         <div className="footer-section links">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/products">Products</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/company-profile">Company Profile</a></li>
-            <li><a href="/comparative-study">Comparative Study</a></li>
-            <li><a href="/reachout">Reachout</a></li>
-            <li><a href="/gallery">Gallery</a></li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/products">Products</a>
+            </li>
+            <li>
+              <a href="/services">Services</a>
+            </li>
+            <li>
+              <a href="/company-profile">Company Profile</a>
+            </li>
+            <li>
+              <a href="/comparative-study">Comparative Study</a>
+            </li>
+            <li>
+              <a href="/reachout">Reach Out</a>
+            </li>
+            <li>
+              <a href="/gallery">Dome House Models</a>
+            </li>
           </ul>
         </div>
 
-        {/* Contact Form */}
         <div className="footer-section contactus-form-section">
           <div className="form-wrapper">
             <h3 className="form-title">Get in Touch</h3>
 
             <form className="contact-form" onSubmit={handleSubmit}>
-              
               <div className="form-group">
                 <input
                   type="text"
@@ -134,7 +139,12 @@ const Footer = () => {
                     e.target.value = value;
                   }}
                 />
-                <input type="email" name="email" placeholder="Your Email" required />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
               </div>
 
               <div className="form-group">
@@ -174,13 +184,16 @@ const Footer = () => {
                 <span className="char-count">{message.length}/250</span>
               </div>
 
-              <button type="submit" className="contactus-btn" disabled={loading}>
+              <button
+                type="submit"
+                className="contactus-btn"
+                disabled={loading}
+              >
                 {loading ? <div className="spinner"></div> : "Send Message"}
               </button>
             </form>
           </div>
         </div>
-
       </div>
 
       <hr />
@@ -188,12 +201,19 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>
           © 2025{" "}
-          <a href="https://enterkeysolutions.com/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://enterkeysolutions.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Enterkey Solutions
-          </a>. 
-          All rights reserved. &nbsp;|&nbsp; 
-          Romarking is one of the{" "}
-          <a href="https://sartaccel.com/" target="_blank" rel="noopener noreferrer">
+          </a>
+          . All rights reserved. &nbsp;|&nbsp; Romarking is one of the{" "}
+          <a
+            href="https://sartaccel.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             SART Accelerator
           </a>{" "}
           portfolio companies.
@@ -204,7 +224,6 @@ const Footer = () => {
           <a href="#terms">Terms of Service</a>
         </div>
       </div>
-
     </footer>
   );
 };
