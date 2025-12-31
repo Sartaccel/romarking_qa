@@ -123,3 +123,17 @@
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 768px) {
+  .gallery-tabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin: 20px 0;
+    margin-left: 70px;
+  }
+
+  .gallery-tab {
+    font-size: 1.3rem;    
+    text-align: center;
+  }
+}

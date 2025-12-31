@@ -92,16 +92,33 @@ const Chatbot = () => {
       answer:
         "Yes — we share FAQs like distance from highways, parking, restrooms, food service, and emergency facilities for each property.",
     },
-    {
-      question: "How can I contact Romarking?",
-      answer:
-        "You can reach us at +91 7092777277 or visit our offices in Coimbatore and Nagercoil, Tamil Nadu. You can also use the contact form on our website.",
-    },
-    {
-      question: "How can I partner with Romarking?",
-      answer:
-        "We collaborate with resort developers, housing project owners, industrial clients, and CSR missions. Visit our Reachout page to book a consultation.",
-    },
+{
+  question: "How can I contact Romarking?",
+  answer: (
+    <>
+      You can reach us at{" "}
+      <a href="tel:+917092777277" className="phone-link">
+        +91 7092777277
+      </a>{" "}
+      or visit our offices in Coimbatore and Nagercoil, Tamil Nadu.
+      You can also use the contact form on our website.
+    </>
+  ),
+},
+
+{
+  question: "How can I partner with Romarking?",
+  answer: (
+    <>
+      We collaborate with resort developers, housing project owners, industrial clients,
+      and CSR missions. Visit our{" "}
+      <a href="/reachout" className="reachout-link">
+        Reachout
+      </a>{" "}
+      page to book a consultation.
+    </>
+  ),
+},
     {
       question: "Can I download your product and service brochures?",
       answer:

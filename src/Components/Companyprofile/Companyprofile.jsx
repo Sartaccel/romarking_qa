@@ -102,13 +102,13 @@ const Companyprofile = () => {
             </li>
           </ul>
 
-          <h3>🌟 Key Features</h3>
+          <h3>Key Features</h3>
           <ul className="features-list">
-            <li>🪶 Lightweight structures – easy to transport and assemble</li>
-            <li>🌦 Weather & corrosion resistant materials for all terrains</li>
-            <li>🔧 Low maintenance, high ROI for developers and investors</li>
+            <li>Lightweight structures – easy to transport and assemble</li>
+            <li>Weather & corrosion resistant materials for all terrains</li>
+            <li>Low maintenance, high ROI for developers and investors</li>
             <li>
-              🌱 Eco-friendly, scalable manufacturing with consistent quality
+              Eco-friendly, scalable manufacturing with consistent quality
             </li>
           </ul>
         </div>

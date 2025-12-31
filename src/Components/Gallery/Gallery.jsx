@@ -5,7 +5,7 @@ import TiltedCard from "../../Widgets/SplitText/TiltedCard";
 //import AnimatedContent from '../../Widgets/SplitText/AnimatedContent'
 import NovaVideo1 from "../../images/DomeVideo.mp4";
 import { IoVideocamSharp } from "react-icons/io5";
-import img1 from "../../images/roam5.jpg";
+import img1 from "../../images/room5.jpg";
 import img2 from "../../images/roam.jpg";
 import img3 from "../../images/roam4.jpg";
 import img4 from "../../images/roam3.jpg";
@@ -99,14 +99,14 @@ const Gallery = () => {
           className={`gallery-tab ${activeCategory === "dome" ? "active" : ""}`}
           onClick={() => setActiveCategory("dome")}
         >
-          Dome House Models
+          Dome House
         </span>
 
         <span
           className={`gallery-tab ${activeCategory === "nova" ? "active" : ""}`}
           onClick={() => setActiveCategory("nova")}
         >
-          Nova Nest Models
+          Nova Nest
         </span>
       </div>
 

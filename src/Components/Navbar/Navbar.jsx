@@ -17,11 +17,17 @@ const Navbar = () => {
     });
   };
 
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+useEffect(() => {
+  if (mobileMenu) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
+  return () => {
+    document.body.style.overflow = "auto";
+  };
+}, [mobileMenu]);
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>

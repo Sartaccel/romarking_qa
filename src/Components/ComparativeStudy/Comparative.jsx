@@ -128,25 +128,25 @@ const Comparative = () => {
           <h2 className="takeaway-heading1">Strategic Takeaways</h2>
           <ul className="takeaway-points">
             <li>
-              🏠 <b>FRP Dome Houses</b> are ideal for{" "}
+               <b>FRP Dome Houses</b> are ideal for{" "}
               <i>scalable, modular deployments</i> in eco-tourism, medical
               tourism, and disaster relief.
             </li>
             <li>
-              🚚 <b>Container Housing</b> offers a{" "}
+               <b>Container Housing</b> offers a{" "}
               <i>balance of durability and affordability</i>, but requires
               insulation and infrastructure retrofits.
             </li>
             <li>
-              🧱 <b>Cement Structures</b> are best for{" "}
+               <b>Cement Structures</b> are best for{" "}
               <i>permanent, high-traffic installations</i>, but lack speed and
               flexibility.
             </li>
             <li>
-              🪟 <b>Glass Domes</b> are niche — <i>aesthetic but fragile.</i>
+               <b>Glass Domes</b> are niche — <i>aesthetic but fragile.</i>
             </li>
             <li>
-              ⛺ <b>Igloos and Tent House</b> are <i>context-specific</i> and
+               <b>Igloos and Tent Houses</b> are <i>context-specific</i> and
               not scalable for modern, multi-climate use.
             </li>
           </ul>

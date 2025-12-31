@@ -10,9 +10,16 @@ import { FaPhoneSquareAlt } from "react-icons/fa";
 const Footer = () => {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-
+const [phone, setPhone] = useState(""); 
   const handleSubmit = async (e) => {
     e.preventDefault();
+if (phone.length !== 10) {
+    toast.error("Please enter a valid 10-digit phone number", {
+      position: "top-right",
+      autoClose: 3000,
+    });
+    return;
+  }
     setLoading(true);
 
     const formData = new FormData(e.target);
@@ -148,15 +155,19 @@ const Footer = () => {
               </div>
 
               <div className="form-group">
-                <input
-                  type="text"
-                  name="phone"
-                  placeholder="Phone Number"
-                  maxLength={10}
-                  onInput={(e) => {
-                    e.target.value = e.target.value.replace(/[^0-9]/g, "");
-                  }}
-                />
+               <input
+  type="text"
+  name="phone"
+  placeholder="Phone Number"
+  maxLength={10}
+  value={phone}
+  onInput={(e) => {
+    const value = e.target.value.replace(/[^0-9]/g, "");
+    setPhone(value);
+  }}
+  required
+/>
+
                 <input
                   type="text"
                   name="subject"
