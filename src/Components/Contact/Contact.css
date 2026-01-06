@@ -14,7 +14,7 @@
 }
 
 .contactus-content {
-  flex: 1 1 500px;
+  flex: 1 1 50px;
   max-width: 600px;
 }
 
@@ -66,7 +66,7 @@
 }
 
 .contactus-image {
-  flex: 1 1 400px;
+  flex: 1 1 40px;
   text-align: center;
 }
 
@@ -140,7 +140,7 @@
 
   .contactus-btn {
     width: 100%;
-    padding: 12px 0;
+    /* padding: 12px 0; */
     font-size: 1rem;
   }
 

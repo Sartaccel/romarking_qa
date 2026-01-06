@@ -41,6 +41,7 @@ if (phone.length !== 10) {
 
       e.target.reset();
       setMessage("");
+      setPhone("");
     } else {
       toast.error("Failed to save", {
         position: "top-right",
@@ -141,10 +142,12 @@ if (phone.length !== 10) {
                   placeholder="Your Name"
                   required
                   onInput={(e) => {
-                    let value = e.target.value.replace(/[^a-zA-Z\s]/g, "");
-                    value = value.replace(/^\s+/, "");
-                    e.target.value = value;
-                  }}
+                  let value = e.target.value;
+                  value = value.replace(/[^a-zA-Z\s]/g, "");
+                  value = value.replace(/^\s+/, "");
+                  value = value.replace(/\s{2,}/g, " ");
+                  e.target.value = value;
+                }}
                 />
                 <input
                   type="email"
