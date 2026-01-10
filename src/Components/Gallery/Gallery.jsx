@@ -4,7 +4,6 @@ import "./Gallery.css";
 import TiltedCard from "../../Widgets/SplitText/TiltedCard";
 //import AnimatedContent from '../../Widgets/SplitText/AnimatedContent'
 import NovaVideo1 from "../../images/DomeVideo.mp4";
-import { IoVideocamSharp } from "react-icons/io5";
 import img1 from "../../images/room5.jpg";
 import img2 from "../../images/roam.jpg";
 import img3 from "../../images/roam4.jpg";
@@ -93,7 +92,6 @@ const Gallery = () => {
   />
 </AnimatedContent> */}
 
-      {/* 🔹 Tabs */}
       <div className="gallery-tabs">
         <span
           className={`gallery-tab ${activeCategory === "dome" ? "active" : ""}`}
@@ -142,9 +140,6 @@ const Gallery = () => {
                     muted
                     preload="metadata"
                   />
-                  <div className="video-overlay">
-                    <IoVideocamSharp className="video-icon" size={50} />
-                  </div>
                 </div>
               )}
             </div>
