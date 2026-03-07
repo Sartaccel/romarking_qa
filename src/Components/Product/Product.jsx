@@ -2,10 +2,24 @@ import React from "react";
 import "./Product.css";
 import DomeImg from "../../images/ThreeDomes.png";
 import AddonsImg from "../../images/Dome_House_Benefits.png";
+import { Helmet } from "react-helmet";
 
 const Product = () => {
   return (
     <div className="product-page">
+            <Helmet>
+        <title>FRP Prefabricated Cottages & FRP Products | Romarking</title>
+
+        <meta
+          name="description"
+          content="Explore Romarking's FRP prefabricated cottages, DOM houses, water tanks, septic tanks, swimming pools, and landscaping products designed for durability and sustainable living."
+        />
+
+        <meta
+          name="keywords"
+          content="Romarking products, FRP cottages, FRP DOM houses, FRP water tanks, FRP septic tanks, FRP swimming pools, FRP landscaping materials"
+        />
+      </Helmet>
       <div className="product-wrapper">
         <div className="product-content">
           <h2>FRP Prefabricated Cottages</h2>

@@ -1,10 +1,24 @@
 import React from "react";
 import "./Comparative.css";
 import strategicImage from "../../images/staratergy.png";
+import { Helmet } from "react-helmet";
 
 const Comparative = () => {
   return (
     <div className="comparative-container">
+            <Helmet>
+        <title>FRP Dome House vs Other Housing Types | Romarking Comparative Study</title>
+
+        <meta
+          name="description"
+          content="Compare FRP Dome Houses with container housing, cement structures, glass domes, igloos, and tent houses. Discover why Romarking FRP dome houses offer durability, sustainability, and fast deployment."
+        />
+
+        <meta
+          name="keywords"
+          content="FRP dome house comparison, Romarking dome houses, dome house vs container house, prefabricated dome homes, eco tourism dome houses"
+        />
+      </Helmet>
       <div className="head">
         <h2>A comparative study of different Dome house options</h2>
       </div>

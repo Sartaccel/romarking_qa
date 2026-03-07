@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.css";
+import { Helmet } from "react-helmet";
 import home from "../../images/homepage.png";
 import home1 from "../../images/homepage2.png";
 import Chatbot from "../Chatbot/Chatbot";
@@ -11,6 +12,13 @@ import Romarkingpdf from "../../images/RomarKing_PDF.pdf";
 const Home = () => {
   return (
     <div className="home-wrapper">
+       <Helmet>
+        <title>Romarking | FRP DOM Houses & Sustainable Living</title>
+        <meta
+          name="description"
+          content="Romarking builds innovative FRP DOM houses and eco-friendly modular solutions for modern living."
+        />
+      </Helmet>
       <div className="home-container">
         <div className="home-image animate-left">
           <img src={home} alt="FRP Smart Living" />

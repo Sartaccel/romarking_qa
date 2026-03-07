@@ -3,6 +3,7 @@ import "./Contact.css";
 import ContactImage from "../../images/contactUs.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -38,6 +39,19 @@ const Contact = () => {
 
   return (
     <div className="contactus-page">
+          <Helmet>
+      <title>Contact Romarking | FRP Dome Houses & Sustainable Living Solutions</title>
+
+      <meta
+        name="description"
+        content="Contact Romarking for FRP dome houses, eco-resort structures, and sustainable modular living solutions. Let’s build innovative and eco-friendly spaces together."
+      />
+
+      <meta
+        name="keywords"
+        content="Contact Romarking, FRP dome houses contact, eco resort dome house company, modular dome homes manufacturer"
+      />
+    </Helmet>
       <section className="contactus-section">
         <div className="contactus-content">
           <h2 className="contactus-title">Ready to Build the Future?</h2>

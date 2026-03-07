@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./Gallery.css";
-//import SplitText from "../../Widgets/SplitText/SplitText";
+import { Helmet } from "react-helmet";
 import TiltedCard from "../../Widgets/SplitText/TiltedCard";
-//import AnimatedContent from '../../Widgets/SplitText/AnimatedContent'
 import NovaVideo1 from "../../images/DomeVideo.mp4";
 import img1 from "../../images/room5.jpg";
 import img2 from "../../images/roam.jpg";
@@ -64,34 +63,19 @@ const Gallery = () => {
 
   return (
     <div className="gallery-page">
-      {/* 🔹 Animated Active Title */}
-      {/* <AnimatedContent
-  distance={150}
-  direction="horizontal"
-  reverse={false}
-  duration={1.2}
-  ease="bounce.out"
-  initialOpacity={0.2}
-  animateOpacity
-  scale={1.1}
-  threshold={0.2}
-  delay={0.3}
->
-  <SplitText
-    text={activeCategory === "dome" ? "Dome House Models" : "Nova Nest"}
-    className="gallery-title text-3xl font-semibold text-center"
-    delay={50}
-    duration={0.6}
-    ease="power3.out"
-    splitType="chars"
-    from={{ opacity: 0, y: 40 }}
-    to={{ opacity: 1, y: 0 }}
-    threshold={0.1}
-    rootMargin="-100px"
-    textAlign="center"
-  />
-</AnimatedContent> */}
+            <Helmet>
+        <title>Romarking Gallery | FRP Dome Houses & Nova Nest Designs</title>
 
+        <meta
+          name="description"
+          content="Explore the Romarking gallery featuring innovative FRP Dome Houses, Nova Nest designs, eco-resort structures, and sustainable living solutions."
+        />
+
+        <meta
+          name="keywords"
+          content="Romarking gallery, FRP dome house images, Nova Nest homes, eco resort dome houses, prefabricated dome homes gallery"
+        />
+      </Helmet>
       <div className="gallery-tabs">
         <span
           className={`gallery-tab ${activeCategory === "dome" ? "active" : ""}`}
@@ -116,7 +100,7 @@ const Gallery = () => {
                 <div onClick={() => setSelectedImage(item.src)}>
                   <TiltedCard
                     imageSrc={item.src}
-                    altText={`Gallery Image ${index + 1}`}
+                    altText={`Romarking FRP Dome House ${index + 1}`}
                     captionText={`Image ${index + 1}`}
                     containerHeight="260px"
                     containerWidth="100%"

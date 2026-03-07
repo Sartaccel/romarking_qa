@@ -2,10 +2,24 @@ import React from "react";
 import "./Companyprofile.css";
 import VisionMissionImg from "../../images/VisMis.png";
 import ImpactImg from "../../images/ImpactAreas.png";
+import { Helmet } from "react-helmet";
 
 const Companyprofile = () => {
   return (
     <div className="company-page">
+            <Helmet>
+        <title>About Romarking | FRP Smart Living & Sustainable Innovations</title>
+
+        <meta
+          name="description"
+          content="Learn about Romarking, a pioneer in FRP smart living solutions. We deliver sustainable prefabricated cottages, modular infrastructure, and eco-friendly innovations for modern communities."
+        />
+
+        <meta
+          name="keywords"
+          content="Romarking company profile, FRP smart living, FRP prefabricated cottages, sustainable construction, eco friendly housing solutions"
+        />
+      </Helmet>
       <section className="company-intro">
         <h1>
           Company Profile – <span>FRP Smart Living</span>

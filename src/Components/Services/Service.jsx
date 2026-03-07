@@ -2,10 +2,25 @@ import React from "react";
 import "./service.css";
 import serviceImg1 from "../../images/OurService.jpg";
 import serviceImg2 from "../../images/Service2.png";
+import { Helmet } from "react-helmet";
 
 const Service = () => {
   return (
     <div className="service-container">
+
+      <Helmet>
+        <title>Romarking Services | HomieFix, SimpleGo & Dome Living Solutions</title>
+
+        <meta
+          name="description"
+          content="Explore Romarking services including HomieFix on-demand assistance, SimpleGo travel support, and integrated dome lifestyle facilities designed for comfort, safety, and convenience."
+        />
+
+        <meta
+          name="keywords"
+          content="Romarking services, HomieFix services, SimpleGo travel services, dome house services, eco resort services, FRP dome living solutions"
+        />
+      </Helmet>
       <div className="service-section animate-left">
         <div className="service-text">
           <h2>On-Call Services with HomieFix and SimpleGo</h2>
