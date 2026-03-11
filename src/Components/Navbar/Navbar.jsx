@@ -5,7 +5,6 @@ import logo from "../../images/RomarLogo.png";
 
 const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
 
   const toggleMobileMenu = () => setMobileMenu(!mobileMenu);
 
@@ -17,20 +16,20 @@ const Navbar = () => {
     });
   };
 
-useEffect(() => {
-  if (mobileMenu) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
+  useEffect(() => {
+    if (mobileMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
 
-  return () => {
-    document.body.style.overflow = "auto";
-  };
-}, [mobileMenu]);
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [mobileMenu]);
 
   return (
-    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+    <nav className="navbar">
       <div className="logo">
         <Link to="/" onClick={closeMenu}>
           <img src={logo} alt="Romarking Logo" />
@@ -49,6 +48,7 @@ useEffect(() => {
               Home
             </NavLink>
           </li>
+
           <li>
             <NavLink
               to="/products"
@@ -58,6 +58,7 @@ useEffect(() => {
               Products
             </NavLink>
           </li>
+
           <li>
             <NavLink
               to="/company-profile"
@@ -67,6 +68,7 @@ useEffect(() => {
               Company Profile
             </NavLink>
           </li>
+
           <li>
             <NavLink
               to="/services"
@@ -76,6 +78,7 @@ useEffect(() => {
               Services
             </NavLink>
           </li>
+
           <li>
             <NavLink
               to="/comparative-study"
@@ -85,6 +88,7 @@ useEffect(() => {
               Comparative Study
             </NavLink>
           </li>
+
           <li>
             <NavLink
               to="/gallery"
@@ -94,6 +98,7 @@ useEffect(() => {
               Dome House Models
             </NavLink>
           </li>
+
           <li>
             <NavLink
               to="/reachout"
